@@ -1,0 +1,72 @@
+// style for tasks section //
+
+.tasks-section{
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 10px rgba(177, 177, 177, 0.322);
+    color: #5d5e70;
+    max-width: 550px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    .container-task{
+        border-bottom: 1px solid #eeeef0;
+        .div-dynamique-content{
+            display: flex;
+            padding: 10px 20px 10px 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .left-part-task{
+                display:flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items:center;
+                .circle-task{
+                    border: 1px solid #eeeef0;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 100%;
+                }
+            }
+        } 
+    }
+    .bottom-part-task-section{
+        padding: 10px 20px 10px 20px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .ul-filter-task{
+            display:flex;
+            flex-direction: row;
+            gap: 15px;
+            list-style-type:none;
+            color: #9a9aa4;
+            font-weight: 600;
+            .li-filter-task{
+                cursor: pointer;
+                &:hover{
+                    color: #444559;
+                }
+            }
+        }
+        .btn-clear-completed{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.active{
+    color: #4b75cb;
+}
+
+//when the task has deleting//
+.delete{
+    color:#d6d6d8;
+    text-decoration: line-through;
+}

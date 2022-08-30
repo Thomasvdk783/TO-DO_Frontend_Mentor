@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Todo app</title>
+  </head>
+  <body>
+    <main>
+      <section class="header-section">
+        <h1>TODO</h1>
+        <img src="./images/icon-moon.svg" alt="icon moon for dark mod" />
+      </section>
+
+      <div class="input-container">
+        <span class="icon-check-input">  
+        </span>
+        <input
+          class="input-add-task"
+          id="input-add-todo"
+          type="text"
+          placeholder="Create a new todo..."
+          alt="Create a new task on todo"
+        />
+      </div>
+
+      <section class="tasks-section">
+        <!-- Dynamique content -->
+        <div class="container-task">
+          <div class="div-dynamique-content">
+            <div class="left-part-task">
+              <span class="circle-task"></span>
+              <p>Some task goes here</p>
+            </div>
+            <span class="cross-delete-task"></span>
+          </div>
+        </div>
+        <div class="bottom-part-task-section">
+          <p>items left</p>
+          <ul class="ul-filter-task">
+            <li class="li-filter-task li-all">All</li>
+            <li class="li-filter-task li-active">Active</li>
+            <li class="li-filter-task li-completeds">Completed</li>
+          </ul>
+          <button class="btn-clear-completed">
+            Clear Completed
+          </button>
+        </div>
+      </section>
+
+      <section class="bottom-text-drag-and-drop">
+        <p>Drag and drop to reorder list</p>
+      </section>
+    </main>
+
+    <!-- Add dynamic number -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
