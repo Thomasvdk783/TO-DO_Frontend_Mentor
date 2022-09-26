@@ -38,11 +38,12 @@
           placeholder="Create a new todo..."
           alt="Create a new task on todo"
         />
+        <button class="todo-button">Add</button>
       </div>
 
       <section class="tasks-section">
         <!-- Dynamique content -->
-        <div class="container-task">
+        <ul id="todo-container" class="container-task">
           <div class="div-dynamique-content">
             <div class="left-part-task">
               <span class="circle-task"></span>
@@ -50,7 +51,7 @@
             </div>
             <span class="cross-delete-task"></span>
           </div>
-        </div>
+        </ul>
         <div class="bottom-part-task-section">
           <p>items left</p>
           <ul class="ul-filter-task">
@@ -69,12 +70,13 @@
       </section>
     </main>
 
-    <!-- Add dynamic number -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+  <script  src="./main.js"></script>
   </body>
 </html>
